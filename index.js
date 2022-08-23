@@ -42,8 +42,6 @@ const saveTodo = (text) => {
 
 const toggleForms = () =>{
     editForm.classList.toggle("hide");
-    editForm.Value ="";
-    editForm.focus();
     todoForm.classList.toggle("hide");
     todoList.classList.toggle("hide");
 }

@@ -17,10 +17,12 @@ colors:
 }
 
 body{
-    background-color: #fff;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-size: cover;
 }
 div.container {
-    background-color:#DEEFE7; 
+    background-color:#deefe7c7; 
     padding: 1.5rem;
     margin: 3rem auto;
     border-radius: 15px;
@@ -144,7 +146,7 @@ div.todo {
     margin-left: 0.4rem;
 }
 .done{
-    background-color: #002333;
+    background-color: #002333d5;
     border-radius: 8px;
 }
 .done h3 {
