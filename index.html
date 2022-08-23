@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List with Vanilla JS</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./index.js" defer></script>
+    <script src="https://kit.fontawesome.com/be2aa1cbe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>To do List</h1>
+        </header>
+        <form id="todo-form">
+            <p>Add task</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="What's your new task?" maxlength="35"/>
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <form id="edit-form" class="hide">
+            <p>Edit your task</p>
+            <div class="form-control">
+                <input type="text" id="edit-input" maxlength="35" placeholder="Edit your task...">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+                <button id="cancel-edit-btn"> Cancel</button>
+            </div>
+            
+        </form>
+        <div id="toolbar">
+            <div id="search">
+                <h4>Search:</h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button id="erase-button">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                    
+                </form>
+            </div>
+            <div id="filter">
+                <h4>Filter:</h4>
+                <select id="filter-select">
+                    <option value="all">All</option>
+                    <option value="done">Done</option>
+                    <option value="todo">To do</option>
+                </select>
+            </div>
+        </div>
+        <div id="todo-list">        
+        </div>
+    </div>
+</body>
+</html>

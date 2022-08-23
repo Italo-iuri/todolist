@@ -1,0 +1,154 @@
+/* 
+colors: 
+#B4BEC9 - grayish - 
+#159A9C - greenish - 
+#002333 - dark
+#DEEFE7 - babygreen - background
+#FFFFFF - white
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #002333;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #fff;
+}
+div.container {
+    background-color:#DEEFE7; 
+    padding: 1.5rem;
+    margin: 3rem auto;
+    border-radius: 15px;
+    max-width: 450px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+button{
+    background-color: whitesmoke;
+    color: #002333;
+    border: 1px solid #002333;
+    border-radius: 10%;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+button#cancel-edit-btn{
+    border-radius: 2px;
+    font-weight: bold;
+
+}
+button#cancel-edit-btn:hover {
+    color: white;
+}
+button:hover {
+    background-color: #158486;
+}
+button:hover > i {
+    color: white;
+}
+
+button i {
+    color: #002333;
+    font-weight: bold;
+    pointer-events: none; 
+}
+
+input, select {
+    padding: 0.25rem 0.5rem;
+}
+
+form.hide {
+    display: none;
+}
+
+.container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #8e8f8e;
+}
+
+#todo-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #8e8f8e;
+}
+#todo-form p, #edit-form p{
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.form-control {
+    display: flex;
+}
+.form-control input{
+    margin-right: 0.3rem;
+}
+#cancel-edit-btn {
+    margin-left: 1.5rem;
+}
+
+#toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid #8e8f8e;
+    display: flex;
+}
+#toolbar h4{
+    margin-bottom: .5rem; 
+}
+#search {
+    border-right: 1px solid #8e8f8e;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+#search form {
+    display: flex;
+}
+#search input {
+    width: 100%;
+    margin-right: 0.3rem;
+}
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+#filter select{
+    flex: 1;
+}
+
+/* todo list */
+
+div.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #8e8f8e;
+    transition: .3s;
+    margin: 5px 0px;
+}
+.todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+}
+.todo button {
+    margin-left: 0.4rem;
+}
+.done{
+    background-color: #002333;
+    border-radius: 8px;
+}
+.done h3 {
+    color: white;
+    text-decoration: line-through;
+    font-style: italic;
+}
